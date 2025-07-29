@@ -25,6 +25,10 @@ jobs:
         cd HelloWorld
         dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run:  |
+        cd HelloWorld
+        dotnet build --no-restore
     - name: Run Hello World
-      run: dotnet run HelloWorld.csproj
+      run:  |
+        cd HelloWorld
+        dotnet run HelloWorld.csproj
